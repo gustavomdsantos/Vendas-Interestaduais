@@ -16,3 +16,7 @@ instala_dependencia("yaml")
 library(yaml)
 
 dados <- yaml.load_file("src/carga-tributaria-brasil.yml")
+
+cat ("A carga tributária no estado de Goiás é", dados$go$carga_tributaria*100, "%")
+
+dados$al$vizinhos[1]
