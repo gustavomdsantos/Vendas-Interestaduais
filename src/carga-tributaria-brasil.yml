@@ -1,0 +1,175 @@
+ac:
+  carga_tributaria: 0.0755
+  vizinhos:
+    - am
+al:
+  carga_tributaria: 0.0739
+  vizinhos:
+    - ba
+    - pe
+    - se
+am:
+  carga_tributaria: 0.0720
+  vizinhos:
+    - ac
+    - mt
+    - pa
+    - ro
+    - rr
+ap:
+  carga_tributaria: 0.0784
+  vizinhos:
+    - pa
+ba:
+  carga_tributaria: 0.0810
+  vizinhos:
+    - al
+    - go
+    - mg
+    - pe
+    - pi
+    - se
+    - to
+ce:
+  carga_tributaria: 0.0717
+  vizinhos:
+    - pb
+    - pe
+    - pi
+    - rn
+df:
+  carga_tributaria: 0.0630
+  vizinhos:
+    - go
+es:
+  carga_tributaria: 0.0576
+  vizinhos:
+    - ba
+    - mg
+    - rj
+go:
+  carga_tributaria: 0.0548
+  vizinhos:
+    - ba
+    - df
+    - mg
+    - mt
+    - ms
+ma:
+  carga_tributaria: 0.0616
+  vizinhos:
+    - pa
+    - pi
+    - to
+mg:
+  carga_tributaria: 0.0698
+  vizinhos:
+    - ba
+    - es
+    - go
+    - ms
+    - rj
+    - sp
+ms:
+  carga_tributaria: 0.0632
+  vizinhos:
+    - go
+    - mg
+    - mt
+    - pr
+    - sp
+mt:
+  carga_tributaria: 0.0862
+  vizinhos:
+    - am
+    - go
+    - ms
+    - pa
+    - ro
+    - to
+pa:
+  carga_tributaria: 0.0573
+  vizinhos:
+    - am
+    - ap
+    - ma
+    - mt
+    - rr
+    - to
+pb:
+  carga_tributaria: 0.0686
+  vizinhos:
+    - pe
+    - rn
+    - ce
+pe:
+  carga_tributaria: 0.0681
+  vizinhos:
+    - al
+    - ba
+    - ce
+    - pb
+    - pi
+pi:
+  carga_tributaria: 0.0755
+  vizinhos:
+    - ba
+    - ce
+    - ma
+    - pe
+rj:
+  carga_tributaria: 0.0530
+  vizinhos:
+    - es
+    - mg
+    - sp
+pr:
+  carga_tributaria: 0.0466
+  vizinhos:
+    - ms
+    - sc
+    - sp
+ro:
+  carga_tributaria: 0.0605
+  vizinhos:
+    - am
+    - mt
+rn:
+  carga_tributaria: 0.0699
+  vizinhos:
+    - ce
+    - pb
+rr:
+  carga_tributaria: 0.0710
+  vizinhos:
+    - am
+    - pa
+rs:
+  carga_tributaria: 0.0532
+  vizinhos:
+    - sc
+sc:
+  carga_tributaria: 0.0564
+  vizinhos:
+    - pr
+    - rs
+se:
+  carga_tributaria: 0.0644
+  vizinhos:
+    - al
+    - ba
+sp:
+  carga_tributaria: 0.0732
+  vizinhos:
+    - mg
+    - ms
+    - pr
+    - rj
+to:
+  carga_tributaria: 0.0655
+  vizinhos:
+    - ba
+    - go
+    - ma
+    - mt
+    - pa
