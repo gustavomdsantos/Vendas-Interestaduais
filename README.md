@@ -14,9 +14,9 @@ Através do **Vendas Interestaduais** eles poderiam conhecer qual a melhor possi
 
 Usagem
 ------
-Apenas entrando com o nome do estado de origem e o de destino no Brasil, além do preço total do produto**\***, o **Vendas Interestaduais** indicará a melhor rota de acordo com as estatísticas de Substituição Tributária de cada estado.
+Apenas entrando com o nome do estado de origem e o de destino no Brasil, além do preço total do produto&ast;, o **Vendas Interestaduais** indicará a melhor rota de acordo com as estatísticas de Substituição Tributária de cada estado.
 
-**\*** _Preço total do produto = preço inicial + frete + IPI + seguro + descontos incondicionais + outras possíveis despesas previamente calculadas pelo usuário._
+&ast; _Preço total do produto = preço inicial + frete + IPI + seguro + descontos incondicionais + outras possíveis despesas previamente calculadas pelo usuário._
 
 Licenciamento
 -------------
