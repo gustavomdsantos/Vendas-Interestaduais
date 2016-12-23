@@ -24,9 +24,12 @@ Apenas entrando com o nome do estado de origem e o de destino no Brasil, além d
 
 Geograficamente falando, a rota mais "direta" que o transporte dos produtos dessa indústria poderia fazer seria: "**Goiás > Mato Grosso > Amazonas**". Simples.
 
-Mas baseado nos dados [desta pesquisa](http://arquivos.portaldaindustria.com.br/app/conteudo_24/2014/05/12/438/1909-TributaosobreMPE.pdf) a respeito da carga tributária de cada estado, podemos saber que essa rota daria prejuízos para o empresário, tendo em vista que o Mato Grosso é o estado que tem **a maior carga tributária do Brasil** (8.62% no ranking geral, 23.17% no ranking de produtos de indústria).
+Mas baseado nos dados [desta pesquisa](http://arquivos.portaldaindustria.com.br/app/conteudo_24/2014/05/12/438/1909-TributaosobreMPE.pdf) a respeito da carga tributária de cada estado, percebemos que essa rota daria prejuízos para o empresário:
 
-Portanto, a melhor rota nesse caso seria passando por rodovias nos seguintes estados:
+![Mapa da carga tributária no Brasil](assets/images/mapa-carga-tributaria-brasil.png)
+*<small><center>Figura 1. Mapa da carga tributária no Brasil</center></small>*
+
+A rota "direta" passa pelo estado do Mato Grosso, que é o estado que tem **a maior carga tributária do Brasil** (8.62% no ranking geral, 23.17% no ranking de produtos de indústria). Portanto, a melhor rota nesse caso seria passando por rodovias nos seguintes estados:
 
 <center>
 "**Goiás > Tocantins > Pará > Amazonas**"
