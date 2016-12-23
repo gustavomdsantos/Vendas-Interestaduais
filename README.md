@@ -23,7 +23,7 @@ Mas baseado nos dados [desta pesquisa](http://arquivos.portaldaindustria.com.br/
 ![Mapa da carga tributária no Brasil](assets/images/mapa-carga-tributaria-brasil.png)
 *<small><center>Figura 1. Mapa da carga tributária no Brasil</center></small>*
 
-![Ranking da carga tributaria em Indústria no Brasil](assets/images/ranking-carga-tributaria_industria-brasil.svg)
+![Ranking da carga tributaria em Indústria no Brasil](https://rawgit.com/gustavosotnas/Vendas-Interestaduais/master/assets/images/ranking-carga-tributaria_industria-brasil.svg)
 *<small><center>Figura 2. Ranking da carga tributaria em Indústria no Brasil</center></small>*
 
 A rota "direta" passa pelo estado do Mato Grosso, que é o estado que tem **a maior carga tributária do Brasil** (8.62% no ranking geral, 23.17% no ranking de produtos de indústria). Portanto, a melhor rota nesse caso seria passando por rodovias nos seguintes estados:
