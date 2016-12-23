@@ -94,7 +94,3 @@ input <- function()
 
 dados <- le_dados()
 entrada_usuario <- input()
-
-cat ("A carga tributária no estado de Goiás é", dados$go$carga_tributaria*100, "%")
-
-dados$al$vizinhos[1]
