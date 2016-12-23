@@ -10,7 +10,7 @@ Descrição
 ---------
 **Vendas Interestaduais** é um projeto de um script na linguagem *R* para facilitar o trabalho de fornecedores e clientes cujos produtos são transportados por vários estados do Brasil.
 
-Através do **Vendas Interestaduais** eles poderiam conhecer qual a melhor possibilidade de rota para a logística de um determinado produto buscando sempre passar pelos estados que existem as menores cargas tributárias.
+Através do **Vendas Interestaduais** eles poderiam conhecer qual a melhor possibilidade de rota para a logística de um determinado produto buscando sempre passar pelos estados que existem as menores cargas tributárias ([ICMS](https://pt.wikipedia.org/wiki/Imposto_sobre_Circula%C3%A7%C3%A3o_de_Mercadorias_e_Servi%C3%A7os)).
 
 Usagem
 ------
