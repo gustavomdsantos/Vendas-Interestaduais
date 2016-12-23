@@ -1,9 +1,24 @@
 # Vendas Interestaduais
-# ---------------------
-# Autor: Gustavo Moraes
+# =====================
+# Comparador de rotas alternativas de mercadorias para o estado do Brasil que 
+# tiver a menor carga de impostos.
+#
+# Author: Gustavo Moraes <gustavosotnas1@gmail.com> <gustavomoraes@inf.ufg.br>
+#
+# This file is subject to the terms and conditions of the MIT License. 
+# See the file COPYING in the main directory of this archive
+# for more details.
 
+# Variáveis GLOBAIS:
+ARQUIVO_ENTRADA <- "src/carga-tributaria-brasil.yml"
+
+##
 # Função que verifica se um pacote/biblioteca para R foi instalado. Se não, instala.
-instala_dependencia <- function(x)
+# 
+# Argumentos:
+#   x - o nome do pacote a ser verificado/instalado.
+##
+install <- function(x)
 {
   if (!require(x,character.only = TRUE))
   {
@@ -12,10 +27,24 @@ instala_dependencia <- function(x)
   }
 }
 
-instala_dependencia("yaml")
-library(yaml)
+##
+# Função que lê os dados de cargas tributárias no Brasil e estados vizinhos
+# (no formato YAML) para uso no Vendas Interestaduais.
+# 
+# Retorna:
+#   dados - uma estrutura de dados em R correspondente ao dados do YAML.
+##
+le_dados <- function()
+{
+  install("yaml")
+  library(yaml)
+  
+  dados <- yaml.load_file(ARQUIVO_ENTRADA)
+}
 
-dados <- yaml.load_file("src/carga-tributaria-brasil.yml")
+#======== Main ========
+
+dados <- le_dados()
 
 cat ("A carga tributária no estado de Goiás é", dados$go$carga_tributaria*100, "%")
 
