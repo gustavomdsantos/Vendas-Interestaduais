@@ -18,6 +18,20 @@ Apenas entrando com o nome do estado de origem e o de destino no Brasil, além d
 
 &ast; _Preço total do produto = preço inicial + frete + IPI + seguro + descontos incondicionais + outras possíveis despesas previamente calculadas pelo usuário._
 
+### *Exemplo*:
+
+***Uma indústria de CDs situada em Goiânia (Goiás), quer enviar uma remessa de CDs gravados para Manaus, no*** **Amazonas**, ***pagando as menores cargas tributárias possíveis no transporte entre os estados.***
+
+Geograficamente falando, a rota mais "direta" que o transporte dos produtos dessa indústria poderia fazer seria: "**Goiás > Mato Grosso > Amazonas**". Simples.
+
+Mas baseado nos dados [desta pesquisa](http://arquivos.portaldaindustria.com.br/app/conteudo_24/2014/05/12/438/1909-TributaosobreMPE.pdf) a respeito da carga tributária de cada estado, podemos saber que essa rota daria prejuízos para o empresário, tendo em vista que o Mato Grosso é o estado que tem **a maior carga tributária do Brasil** (8.62% no ranking geral, 23.17% no ranking de produtos de indústria).
+
+Portanto, a melhor rota nesse caso seria passando por rodovias nos seguintes estados:
+
+<center>
+"**Goiás > Tocantins > Pará > Amazonas**"
+</center>
+
 Licenciamento
 -------------
 **Vendas Interestaduais** é distribuído sob os termos da [MIT License](https://opensource.org/licenses/MIT). Consulte o arquivo [COPYING](./COPYING) para mais detalhes.
