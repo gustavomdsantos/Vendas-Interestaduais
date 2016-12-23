@@ -42,9 +42,58 @@ le_dados <- function()
   dados <- yaml.load_file(ARQUIVO_DADOS_TRIB)
 }
 
+##
+# Função que obtêm dados de entrada por teclado do usuário e adiciona em uma
+# variável do tipo String.
+# 
+# Retorna:
+#   n - a string que armazena o que o usuário digitou.
+##
+scanner <- function(promptText)
+{
+  n <- readline(prompt=promptText)
+  return(n)
+}
+
+##
+# Função que obtêm dados de entrada por teclado do usuário e adiciona em uma
+# variável do tipo inteiro.
+# 
+# Retorna:
+#   n - o inteiro que armazena o que o usuário digitou.
+##
+scanner_int <- function(promptText)
+{
+  n <- readline(prompt=promptText)
+  return(as.integer(n))
+}
+
+##
+# Função que exibe um cabeçalho pro usuário e solicita-lhe os dados necessários.
+# 
+# Retorna:
+#   entrada - conjunto de dados de entrada do usuário:
+#     * sigla do estado de origem do(s) produto(s);
+#     * sigla do estado de destino do(s) produto(s);
+#     * preço total do(s) produto(s).
+##
+input <- function()
+{
+  cat("\nVENDAS INTERESTADUAIS")
+  cat("\n=====================\n\n")
+  
+  origem <- scanner("Entre com a sigla do estado de ORIGEM do(s) produto(s): ")
+  destino <- scanner("Entre com a sigla do estado de DESTINO do(s) produto(s): ")
+  total <- scanner_int(
+    "O preço total do(s) produto(s) (com frete + IPI + seguro + outras despesas): ")
+  
+  return(c(origem, destino, total))
+}
+
 #======== Main ========
 
 dados <- le_dados()
+entrada_usuario <- input()
 
 cat ("A carga tributária no estado de Goiás é", dados$go$carga_tributaria*100, "%")
 
