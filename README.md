@@ -12,12 +12,6 @@ Descrição
 
 Através do **Vendas Interestaduais** eles poderiam conhecer qual a melhor possibilidade de rota para a logística de um determinado produto buscando sempre passar pelos estados que existem as menores cargas tributárias ([ICMS](https://pt.wikipedia.org/wiki/Imposto_sobre_Circula%C3%A7%C3%A3o_de_Mercadorias_e_Servi%C3%A7os)).
 
-Usagem
-------
-Apenas entrando com o nome do estado de origem e o de destino no Brasil, além do preço total do produto&ast;, o **Vendas Interestaduais** indicará a melhor rota de acordo com as estatísticas de Substituição Tributária de cada estado.
-
-&ast; _Preço total do produto = preço inicial + frete + IPI + seguro + descontos incondicionais + outras possíveis despesas previamente calculadas pelo usuário._
-
 ### *Exemplo*:
 
 ***Uma indústria de CDs situada em Goiânia (Goiás), quer enviar uma remessa de CDs gravados para Manaus, no*** **Amazonas**, ***pagando as menores cargas tributárias possíveis no transporte entre os estados.***
@@ -34,6 +28,26 @@ A rota "direta" passa pelo estado do Mato Grosso, que é o estado que tem **a ma
 <center>
 "**Goiás > Tocantins > Pará > Amazonas**"
 </center>
+
+Usagem
+------
+O script pode ser usado apenas executando-o com o **`R`**, usando o comando:
+
+```sh
+Rscript src/vendas-interestaduais.R
+```
+
+na linha de comandos do seu computador ou
+
+```sh
+R
+source("src/vendas-interestaduais.R")
+```
+dentro do **R** (modo interativo).
+
+Entrando com o nome do estado de origem e o de destino do(s) produto(s) no Brasil, e o preço total dele(s)&ast;. O **Vendas Interestaduais** indicará a melhor rota de acordo com as estatísticas de carga tributária de cada estado, contando com um arquivo YAML que contém os dados das cargas tributárias de todos os estados do Brasil.
+
+&ast; _Preço total do produto = preço inicial + frete + IPI + seguro + descontos incondicionais + outras possíveis despesas previamente calculadas pelo usuário._
 
 Licenciamento
 -------------
