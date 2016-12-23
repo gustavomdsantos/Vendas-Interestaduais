@@ -10,7 +10,7 @@
 # for more details.
 
 # Variáveis GLOBAIS:
-ARQUIVO_ENTRADA <- "src/carga-tributaria-brasil.yml"
+ARQUIVO_DADOS_TRIB <- "src/carga-tributaria-brasil.yml"
 
 ##
 # Função que verifica se um pacote/biblioteca para R foi instalado. Se não, instala.
@@ -39,7 +39,7 @@ le_dados <- function()
   install("yaml")
   library(yaml)
   
-  dados <- yaml.load_file(ARQUIVO_ENTRADA)
+  dados <- yaml.load_file(ARQUIVO_DADOS_TRIB)
 }
 
 #======== Main ========
