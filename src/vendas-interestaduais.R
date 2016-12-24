@@ -114,8 +114,18 @@ gera_melhor_rota <- function()
 ##
 obtem_vizinho_menor_carga <- function(estado)
 {
-  # for(vizinho in estado)
-  # dados[[estado]]$vizinhos[1]
+  vizinho_menor <- dados[[estado]]$vizinhos[1] # inicializa com 1º do vetor
+  carga_menor <- dados[[dados[[estado]]$vizinhos[1]]]$carga_tributaria # inicializa com 1º do vetor
+
+  if(length(dados[[estado]]$vizinhos) > 1) {
+    for(i in 2:length(dados[[estado]]$vizinhos)) {
+      if(dados[[dados[[estado]]$vizinhos[i]]]$carga_tributaria < carga_menor) {
+        vizinho_menor <- dados[[estado]]$vizinhos[i]
+        carga_menor <- dados[[dados[[estado]]$vizinhos[i]]]$carga_tributaria
+      }
+    }
+  }
+  return(vizinho_menor)
 }
 
 #======== Main ========
