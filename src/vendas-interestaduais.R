@@ -38,8 +38,8 @@ le_dados <- function()
 {
   install("yaml")
   library(yaml)
-  
-  dados <- yaml.load_file(ARQUIVO_DADOS_TRIB)
+
+  dados_list <- yaml.load_file(ARQUIVO_DADOS_TRIB)
 }
 
 ##
@@ -88,6 +88,34 @@ input <- function()
     "O preço total do(s) produto(s) (com frete + IPI + seguro + outras despesas): ")
   
   return(c(origem, destino, total))
+}
+
+##
+# Função que calcula qual a rota que passa pelos estados do Brasil que tem as 
+# menores cargas tributárias possível.
+# 
+# Retorna:
+#   rota - uma String contendo a rota a ser percorrida.
+##
+gera_melhor_rota <- function()
+{
+  
+}
+
+##
+# Obtêm o nome do estado do Brasil vizinho a um determinado estado que tem a 
+# menor carga tributária dentre todos os vizinhos a este.
+# 
+# Argumentos:
+#   estado - o nome do estado a ser pesquisado os seus vizinhos.
+# 
+# Retorna:
+#   vizinho_menor_carga - o nome do estado vizinho de menor carga tributária.
+##
+obtem_vizinho_menor_carga <- function(estado)
+{
+  # for(vizinho in estado)
+  # dados[[estado]]$vizinhos[1]
 }
 
 #======== Main ========
