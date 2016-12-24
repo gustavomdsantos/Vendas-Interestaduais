@@ -103,14 +103,14 @@ gera_melhor_rota <- function()
 }
 
 ##
-# Obtêm o nome do estado do Brasil vizinho a um determinado estado que tem a 
+# Obtêm a sigla do estado do Brasil vizinho a um determinado estado que tem a 
 # menor carga tributária dentre todos os vizinhos a este.
 # 
 # Argumentos:
-#   estado - o nome do estado a ser pesquisado os seus vizinhos.
+#   estado - a sigla do estado a ser pesquisado os seus vizinhos.
 # 
 # Retorna:
-#   vizinho_menor_carga - o nome do estado vizinho de menor carga tributária.
+#   vizinho_menor_carga - o nome da sigla do estado vizinho de menor carga tributária.
 ##
 obtem_vizinho_menor_carga <- function(estado)
 {
@@ -126,6 +126,36 @@ obtem_vizinho_menor_carga <- function(estado)
     }
   }
   return(vizinho_menor)
+}
+
+##
+# Ordena estados do Brasil vizinhos a um determinado estado por valor de carga 
+# tributária.
+# 
+# Argumentos:
+#   estado - a sigla do estado a ser pesquisado os seus vizinhos.
+# 
+# Retorna:
+#   vizinhos_sort - um vetor de strings das siglas dos estados ordenados da 
+#   menor para a maior carga tributária.
+##
+ordena_vizinhos_carga <- function(estado)
+{
+  vizinhos_sort <- c(obtem_vizinho_menor_carga(estado)) # obtêm o primeiro elemento da lista (o menor)
+  carga_menor <- dados[[vizinhos_sort[1]]]$carga_tributaria # obtêm a menor carga dos vizinhos
+
+  if(length(dados[[estado]]$vizinhos) > 1) {
+    while (length(vizinhos_sort) < length(dados[[estado]]$vizinhos)) {
+      for(i in 2:length(dados[[estado]]$vizinhos)) {
+        if(dados[[dados[[estado]]$vizinhos[i]]]$carga_tributaria < carga_menor) {
+          if(!(dados[[estado]]$vizinhos[i] %in% vizinhos_sort)) # se o estado não está na lista
+          {
+            vizinhos_sort <- c(vizinhos_sort, c(dados[[estado]]$vizinhos[i])) # coloca na lista
+          }
+        }
+      }
+    }
+  }
 }
 
 #======== Main ========
